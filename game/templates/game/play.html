@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'game/play.css' %}">
+</head>
+<body>
+    <div class="play-area">
+        <div class="points-container">
+            <p style="font-size: 1.4rem; text-align: center;">Points</p>
+            <p><span id="your-points-span">0</span>-<span id="vs-points-span">0</span></p>
+        </div>
+        <div class="word-area">
+            <div class="words-container">
+                <div class="word w1">
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                </div>
+                <div class="word w2">
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                </div>
+                <div class="word w3">
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                </div>
+                <div class="word w4">
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                </div>
+                <div class="word w5">
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                    <div class="letter"></div>
+                </div>
+                <input type="text" id="word-input" placeholder="Guess a word" maxlength="10">
+            </div>
+        </div>
+        <div class="controll-area">
+            <p id="info-text" class="info-text">Info Text</p>
+            <div class="buttons-container">
+                <div id="random-letter-button" class="button">Add Random Letter</div>
+                <div id="word-letter-button" class="button">Add Letter For Word</div>
+                <div id="guess-word-button" class="button">Guess a Word</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script type="module" src="{% static 'game/connect.js' %}"></script>
+</body>
+</html>
