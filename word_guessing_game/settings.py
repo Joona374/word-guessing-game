@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-)$m5q11_w7@6=)1ao9mk64l!ulfyv45jhzn=9g1z!sr5m0gqs&
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['joona374.pythonanywhere.com']
+ALLOWED_HOSTS = ["joona374.pythonanywhere.com", "0.0.0.0"]
 
 # Application definition
 
@@ -127,7 +127,6 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
-
 
 
 # Default primary key field type

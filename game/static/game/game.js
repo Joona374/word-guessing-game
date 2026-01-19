@@ -101,31 +101,30 @@ class Word {
     }
 
     accidentallyShowWord() {
-        this.solved = true
-        this.guessingWord = this.fullWord
-        console.log("Hello Hello?")
-        for (let i = 0; i < this.fullWord.length; i++) {
-            setTimeout(() => {
-                this.letterElements[i].textContent = this.fullWord[i]
-                this.letterElements[i].style.backgroundColor = "yellow"
-                this.letterElements[i].style.color = "black"
-            }, i * 200)
-        }
-        sendAccidentallyShowWord(this.wordIndex)
+      this.solved = true;
+      this.guessingWord = this.fullWord;
 
+      for (let i = 0; i < this.fullWord.length; i++) {
+        setTimeout(() => {
+          this.letterElements[i].textContent = this.fullWord[i];
+          this.letterElements[i].style.backgroundColor = "yellow";
+          this.letterElements[i].style.color = "black";
+        }, i * 200);
+      }
+      sendAccidentallyShowWord(this.wordIndex);
     }
 
     accidentallyShowWordForOpponent() {
-        this.solved = true
-        this.guessingWord = this.fullWord
-        console.log("Hello Hello?")
-        for (let i = 0; i < this.fullWord.length; i++) {
-            setTimeout(() => {
-                this.letterElements[i].textContent = this.fullWord[i]
-                this.letterElements[i].style.backgroundColor = "yellow"
-                this.letterElements[i].style.color = "black"
-            }, i * 200)
-        }
+      this.solved = true;
+      this.guessingWord = this.fullWord;
+
+      for (let i = 0; i < this.fullWord.length; i++) {
+        setTimeout(() => {
+          this.letterElements[i].textContent = this.fullWord[i];
+          this.letterElements[i].style.backgroundColor = "yellow";
+          this.letterElements[i].style.color = "black";
+        }, i * 200);
+      }
     }
 
     showLetter() {
